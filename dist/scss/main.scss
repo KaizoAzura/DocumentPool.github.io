@@ -2,12 +2,13 @@
 @import "component/button";
 @import "component/form";
 @import "component/offcanvas";
+@import "component/card";
 
 // style
 
 // aside
 .aside {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -80%;
   width: 80%;

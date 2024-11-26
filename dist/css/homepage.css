@@ -107,73 +107,42 @@ form .form-control::placeholder {
   font-size: 2rem;
 }
 
-.folder-container {
-  display: flex;
-  text-decoration: none;
-  align-items: center;
-  color: #eeeeee;
-  background-color: #000000;
-  border: 2px solid #393e46;
-  font-size: 1rem;
-  transition: var(--transition-duration);
-  border-radius: 0.25rem;
-}
-.folder-container:hover {
-  transform: var(--translate-button);
-  transition: var(--transition-duration);
-  box-shadow: var(--hover-button);
-}
-.folder-container i {
+.subheading {
   font-size: 1.25rem;
-}
-.folder-container h6 {
-  display: block;
-  text-overflow: ellipsis;
-  width: 200px;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .card-container {
   background-color: black;
   border: 2px solid #393e46;
-  height: 75vh;
-  overflow-y: auto;
-}
-.card-container .product-container {
-  text-decoration: none;
   color: #eeeeee;
+}
+.card-container .earning-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  font-size: 1.25rem;
 }
-.card-container .product-container:hover {
-  background-color: white;
-  color: #000000;
+.card-container .earning-header h6 {
+  font-size: 1.25rem;
 }
-.card-container .product-container img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #eeeeee;
-  border: 1px solid #393e46;
+.card-container .earning {
+  font-size: 2.25rem;
 }
-.card-container .product-container h6 {
-  font-size: 1.1rem;
-  display: block;
-  text-overflow: ellipsis;
-  width: 200px;
-  white-space: nowrap;
-  overflow: hidden;
+.card-container .form-check-label {
+  color: #ffffff;
+  font-size: 0.8rem;
 }
-.card-container .product-container p {
-  font-size: 0.9rem;
-  display: block;
-  text-overflow: ellipsis;
-  width: 200px;
-  white-space: nowrap;
-  overflow: hidden;
+.card-container .form-check-label.disabled {
+  text-decoration: line-through;
 }
 
-.subheading {
-  font-size: 1.25rem;
+@media screen and (min-width: 768px) {
+  .card-container .form-check-label {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .title {
+    font-size: 2.5rem;
+  }
 }/*# sourceMappingURL=homepage.css.map */

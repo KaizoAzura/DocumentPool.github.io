@@ -7,6 +7,14 @@
   --hover-button: 4px 4px 0px 0px #eeeeee;
   --translate-button: translate(-3px, -3px);
 }
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+  border-left: 1px solid #eeeeee;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #393e46;
+}
 
 body {
   background-color: #222831;
