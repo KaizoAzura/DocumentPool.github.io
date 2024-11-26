@@ -1,0 +1,81 @@
+@import "root";
+@import "component/button";
+@import "component/form";
+@import "component/offcanvas";
+
+// style
+
+// heading
+.title {
+  font-size: 2rem;
+}
+
+.folder-container {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: #eeeeee;
+  background-color: #000000;
+  border: 2px solid #393e46;
+  font-size: 1rem;
+  transition: var(--transition-duration);
+  border-radius: 0.25rem;
+  &:hover {
+    transform: var(--translate-button);
+    transition: var(--transition-duration);
+    box-shadow: var(--hover-button);
+  }
+  i {
+    font-size: 1.25rem;
+  }
+  h6 {
+    display: block;
+    text-overflow: ellipsis;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.card-container {
+  background-color: black;
+  border: 2px solid #393e46;
+  height: 75vh;
+  overflow-y: auto;
+  .product-container {
+    text-decoration: none;
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: white;
+      color: #000000;
+    }
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #eeeeee;
+      border: 1px solid #393e46;
+    }
+    h6 {
+      font-size: 1.1rem;
+      display: block;
+      text-overflow: ellipsis;
+      width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    p {
+      font-size: 0.9rem;
+      display: block;
+      text-overflow: ellipsis;
+      width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
+.subheading {
+  font-size: 1.25rem;
+}

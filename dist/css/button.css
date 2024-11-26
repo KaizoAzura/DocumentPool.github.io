@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mabry Pro", sans-serif;
+  box-sizing: border-box;
+  --transition-duration: 0.3s;
+  --hover-button: 4px 4px 0px 0px #eeeeee;
+  --translate-button: translate(-3px, -3px);
+}
+
+body {
+  background-color: #222831;
+  color: #ffffff;
+}
+
+.btn {
+  padding: 0.4rem 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #393e46;
+  border-radius: 0.5rem;
+  transition: var(--transition-duration);
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+.btn:hover {
+  box-shadow: var(--hover-button);
+  transform: var(--translate-button);
+  transition: var(--transition-duration);
+  border: 2px solid #393e46;
+}
+.btn:active {
+  box-shadow: none;
+  transform: none;
+  border: 2px solid #393e46;
+}
+.btn:focus {
+  border: 2px solid #393e46;
+}
+
+@media screen and (min-width: 576px) {
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+}/*# sourceMappingURL=button.css.map */

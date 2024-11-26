@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docpool - Share, Sell and Buy Document</title>
+    <!-- link css -->
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="dist/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <!-- link css style -->
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <!-- link icon -->
+    <!-- remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- offcanvas content -->
+    <!-- offcanvas search -->
+    <div
+      class="offcanvas offcanvas-top"
+      tabindex="-1"
+      id="offcanvasSearch"
+      aria-labelledby="offcanvasSearch"
+    >
+      <div class="offcanvas-body">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search on dashboard..."
+            aria-label="Search"
+          />
+          <button class="btn" type="submit">
+            <i class="ri-search-2-line"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- end offcanvas search -->
+    <!-- end offcanvas content -->
+
+    <!-- aside -->
+    <section class="aside">
+      <ul class="navbar-nav">
+        <!-- profil user -->
+        <li class="nav-item">
+          <a href="#" class="profil-container nav-link p-3">
+            <img src="src/img/logo.png" class="profil-img" alt="Logo" />
+            <h6 class="profil-name mb-0 ms-2">Nicolas Satria Afri Liyansa</h6>
+          </a>
+        </li>
+        <!-- end profil user -->
+        <!-- Homepage -->
+        <li class="nav-item">
+          <a href="#" class="nav-link p-3 active">
+            <i class="ri-home-line"></i><span class="ms-2">Homepage</span>
+          </a>
+        </li>
+
+        <!-- My Drive -->
+        <li class="nav-item">
+          <a href="#" class="nav-link p-3">
+            <i class="ri-folder-line"></i><span class="ms-2">My Drive</span>
+          </a>
+        </li>
+
+        <!-- Marketplace -->
+        <li class="nav-item">
+          <a href="#" class="nav-link p-3">
+            <i class="ri-store-line"></i><span class="ms-2">Marketplace</span>
+          </a>
+        </li>
+
+        <!-- Upload Document -->
+        <li class="nav-item">
+          <a href="#" class="nav-link p-3">
+            <i class="ri-upload-line"></i
+            ><span class="ms-2">Upload Document</span>
+          </a>
+        </li>
+
+        <!-- Analytic -->
+        <li class="nav-item">
+          <a href="#" class="nav-link p-3">
+            <i class="ri-line-chart-line"></i
+            ><span class="ms-2">Analytics</span>
+          </a>
+        </li>
+
+        <!-- Emails -->
+        <li class="nav-item">
+          <a href="#" class="nav-link p-3">
+            <i class="ri-mail-line"></i><span class="ms-2">Emails</span>
+          </a>
+        </li>
+
+        <!-- Notifications -->
+        <li class="nav-item">
+          <a href="#" class="nav-link p-3">
+            <i class="ri-notification-line"></i
+            ><span class="ms-2">Notifications</span>
+          </a>
+        </li>
+
+        <!-- Settings -->
+        <li class="nav-item">
+          <a href="#" class="nav-link p-3">
+            <i class="ri-settings-line"></i><span class="ms-2">Settings</span>
+          </a>
+        </li>
+
+        <!-- Help -->
+        <li class="nav-item">
+          <a href="#" class="nav-link p-3">
+            <i class="ri-question-line"></i
+            ><span class="ms-2">Help Center</span>
+          </a>
+        </li>
+
+        <!-- Logout -->
+        <li class="nav-item">
+          <a href="#" class="nav-link p-3 text-danger">
+            <i class="ri-logout-box-line"></i><span class="ms-2">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- end aside -->
+    <!-- content -->
+    <section class="content">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand py-3">
+        <div class="container-fluid">
+          <button class="btn me-2" id="asideToggler">
+            <i class="ri-menu-line"></i>
+          </button>
+          <a class="navbar-brand fw-bold" href="#">DocPool</a>
+          <div class="collapse navbar-collapse">
+            <form class="d-none d-md-flex ms-auto me-2" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search on dashboard..."
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">
+                <i class="ri-search-2-line"></i>
+              </button>
+            </form>
+            <ul class="navbar-nav ms-auto ms-md-0">
+              <li class="nav-item d-md-none">
+                <a
+                  href="#offcanvasSearch"
+                  class="btn me-2"
+                  data-bs-toggle="offcanvas"
+                >
+                  <i class="ri-search-2-line"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="btn me-2"
+                  ><i class="ri-notification-3-line"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="btn me-md-2"><i class="ri-mail-line"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end navbar -->
+      <!-- main content -->
+      <div id="mainContent" class="container mt-4">
+        <!-- Content will be loaded here -->
+      </div>
+      <!-- end main content -->
+    </section>
+
+    <!-- end content -->
+
+    <!-- script -->
+    <!-- script link -->
+    <script src="dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>

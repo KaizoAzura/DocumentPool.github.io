@@ -1,0 +1,8 @@
+.offcanvas#offcanvasSearch {
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #222831;
+}
+.offcanvas#offcanvasSearch .form-control {
+  width: 100%;
+}/*# sourceMappingURL=offcanvas.css.map */

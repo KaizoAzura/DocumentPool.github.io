@@ -1,0 +1,16 @@
+form {
+  .form-control {
+    border: 2px solid #393e46;
+    background-color: #eeeeee;
+    width: 300px;
+    &:focus {
+      border: 2px solid #00adb5;
+      box-shadow: none;
+      outline: none;
+      background-color: #eeeeee;
+    }
+    &::placeholder {
+      font-size: 0.9rem;
+    }
+  }
+}

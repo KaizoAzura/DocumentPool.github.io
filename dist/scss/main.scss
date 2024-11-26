@@ -1,0 +1,116 @@
+@import "root";
+@import "component/button";
+@import "component/form";
+@import "component/offcanvas";
+
+// style
+
+// aside
+.aside {
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 80%;
+  border-right: 1px solid #eeeeee;
+  z-index: 999;
+  transition: var(--transition-duration);
+  height: 100vh;
+  background-color: black;
+  overflow-y: auto;
+  //   show
+  &.show {
+    left: 0;
+    transition: var(--transition-duration);
+  }
+  .navbar-nav {
+    background-color: black;
+    // profil container
+    .profil-container {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eeeeee;
+      background-color: black;
+      .profil-img {
+        width: 20%;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        overflow: hidden;
+        border: 1px solid #eeeeee;
+        background-color: transparent;
+      }
+      .profil-name {
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 175px;
+        overflow: hidden;
+        background-color: black;
+      }
+    }
+    // nav item
+    .nav-item {
+      .nav-link {
+        color: #eeeeee;
+        border-bottom: 1px solid #eeeeee;
+        background-color: black;
+        &.active {
+          color: #00adb5;
+        }
+        &:hover {
+          color: #00adb5;
+        }
+      }
+    }
+  }
+}
+
+// content
+.content {
+  transition: var(--transition-duration);
+  &.shrink {
+    transition: var(--transition-duration);
+  }
+  // navbar
+  .navbar {
+    color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    .navbar-brand {
+      color: #ffffff;
+    }
+  }
+}
+
+// responsive
+// up 768px
+@media screen and (min-width: 768px) {
+  .aside {
+    width: 50%;
+  }
+}
+// up 992px
+@media screen and (min-width: 992px) {
+  .aside {
+    width: 25%;
+  }
+
+  //   content
+  .content {
+    &.shrink {
+      margin-left: 25%;
+    }
+  }
+}
+// up 1200px
+// up 1440px
+@media screen and (min-width: 1440px) {
+  .aside {
+    width: 20%;
+  }
+  // content
+  .content {
+    &.shrink {
+      margin-left: 20%;
+    }
+  }
+}
