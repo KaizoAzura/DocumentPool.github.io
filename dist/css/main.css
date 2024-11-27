@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: #222831;
+  background-color: #161616;
   color: #ffffff;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 body {
-  background-color: #222831;
+  background-color: #161616;
   color: #ffffff;
 }
 
@@ -122,7 +122,7 @@ form .form-control::placeholder {
 }
 
 body {
-  background-color: #222831;
+  background-color: #161616;
   color: #ffffff;
 }
 
@@ -177,10 +177,80 @@ body {
 }
 
 body {
-  background-color: #222831;
+  background-color: #161616;
   color: #ffffff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mabry Pro", sans-serif;
+  box-sizing: border-box;
+  --transition-duration: 0.3s;
+  --hover-button: 4px 4px 0px 0px #eeeeee;
+  --translate-button: translate(-3px, -3px);
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+  border-left: 1px solid #eeeeee;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #393e46;
+}
+
+body {
+  background-color: #161616;
+  color: #ffffff;
+}
+
+table {
+  background-color: black;
+  width: 100%;
+  border: 1px solid #393e46;
+  overflow-x: auto;
+}
+table tr {
+  border: 1px solid #393e46;
+}
+table tr th,
+table tr td {
+  padding: 1rem;
+  border: 1px solid #393e46;
+}
+table tr th.edit {
+  width: 5%;
+}
+table tr th.category, table tr th.price {
+  width: 10%;
+}
+table tr td.name {
+  display: flex;
+  flex-direction: column;
+}
+table tr td.name img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100px;
+  width: 100px;
+  border-radius: 0.25rem;
+  border: 2px solid #393e46;
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+  table tr td.name {
+    flex-direction: row;
+    align-items: center;
+  }
+  table tr td.name .product-title {
+    font-size: 1.25rem;
+  }
+}
 .aside {
   position: fixed;
   top: 0;

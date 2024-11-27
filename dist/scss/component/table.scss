@@ -1,0 +1,61 @@
+@import "\../root";
+
+table {
+  background-color: black;
+  width: 100%;
+  border: 1px solid #393e46;
+  overflow-x: auto;
+  tr {
+    border: 1px solid #393e46;
+    th,
+    td {
+      padding: 1rem;
+      border: 1px solid #393e46;
+    }
+    th {
+      &.edit {
+        width: 5%;
+      }
+      &.category,
+      &.price {
+        width: 10%;
+      }
+    }
+    td {
+      &.name {
+        display: flex;
+        flex-direction: column;
+        img {
+          object-fit: contain;
+          height: 100px;
+          width: 100px;
+          border-radius: 0.25rem;
+          border: 2px solid #393e46;
+        }
+      }
+    }
+  }
+}
+
+// product name
+.product-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+// responsive
+@media (min-width: 576px) {
+  table {
+    tr {
+      td {
+        &.name {
+          flex-direction: row;
+          align-items: center;
+          .product-title {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}
