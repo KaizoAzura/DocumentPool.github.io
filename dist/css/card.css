@@ -74,46 +74,4 @@ body {
 body {
   background-color: #222831;
   color: #ffffff;
-}
-
-.card {
-  background-color: black;
-  border: 2px solid #393e46;
-  border-radius: 0.25rem;
-  transition: var(--transition-duration);
-  text-decoration: none;
-  color: #eeeeee;
-}
-.card:hover {
-  transition: var(--transition-duration);
-  transform: var(--translate-button);
-  box-shadow: var(--hover-button);
-}
-.card img {
-  max-height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-  -o-object-position: top;
-     object-position: top;
-}
-.card .card-title {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  font-size: 1.25rem;
-  line-height: 1.5em;
-}
-.card .card-text {
-  font-weight: 300;
-  font-size: 0.9rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
 }/*# sourceMappingURL=card.css.map */

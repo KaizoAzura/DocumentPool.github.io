@@ -69,6 +69,7 @@
 // content
 .content {
   transition: var(--transition-duration);
+  position: relative;
   &.shrink {
     transition: var(--transition-duration);
   }
